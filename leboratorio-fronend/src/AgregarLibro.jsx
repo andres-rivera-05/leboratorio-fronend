@@ -5,6 +5,7 @@ export const AgregarLibro = () => {
 
     const url = "http://localhost:4000/api/libro"
 
+    const [agregado, setAgregado] = useState("");
 
     const [titulo, setTitulo] = useState();
 
@@ -36,9 +37,13 @@ export const AgregarLibro = () => {
             anio_publicacion: anio_publicacion
         }
 
-
+        try {
         const result = await axios.post(url, data);
-        const resulData = (await result).data;
+        const resulData = (result).data;
+         setAgregado("Libro agregado")
+        } catch (err) {
+            setAgregado("Libro no agregado")
+        }
     }
 
   return (
@@ -75,6 +80,7 @@ export const AgregarLibro = () => {
                         <button type="submit" className="btn btn-primary w-100">ano publicacion</button>
                     </fieldset>
                 </form>
+                <div className='col-12 text-center mt-5'><h3 style={{color: "green"}}>{agregado}</h3></div>
                 </div>
             </div>
     </>
