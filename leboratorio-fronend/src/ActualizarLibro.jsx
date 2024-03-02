@@ -53,9 +53,8 @@ export const ActualizarLibro = () => {
         const resulData = (result).data;
          setAgregado("Libro actualizado")
         } catch (err) {
-            setAgregado("Libro no actualizado")
+        setAgregado("Libro no actualizado")
         }
-
 
     }
 

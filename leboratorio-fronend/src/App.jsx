@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AgregarLibro } from './AgregarLibro'
 import { ActualizarLibro } from './ActualizarLibro'
+import { EliminarLibro } from './EliminarLibro'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
      <Routes>
       <Route path='/' element={<AgregarLibro/>}></Route>
       <Route path='/actualizar-libro' element={<ActualizarLibro/>}></Route>
+      <Route path='/eliminar-libro' element={<EliminarLibro/>}></Route>
      </Routes>
      </BrowserRouter>
     </>
