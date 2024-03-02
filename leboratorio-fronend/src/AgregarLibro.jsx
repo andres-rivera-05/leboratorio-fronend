@@ -77,7 +77,7 @@ export const AgregarLibro = () => {
                                     placeholder="Ingrese el ano de publicacion" onChange={anioHandler} />
                             </div>
                         </div>
-                        <button type="submit" className="btn btn-primary w-100">ano publicacion</button>
+                        <button type="submit" className="btn btn-primary w-100">Agregar</button>
                     </fieldset>
                 </form>
                 <div className='col-12 text-center mt-5'><h3 style={{color: "green"}}>{agregado}</h3></div>
