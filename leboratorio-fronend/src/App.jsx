@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { AgregarLibro } from './AgregarLibro'
 import { ActualizarLibro } from './ActualizarLibro'
 import { EliminarLibro } from './EliminarLibro'
+import './styles.css'
 
 function App() {
 

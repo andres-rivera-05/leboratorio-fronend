@@ -4,6 +4,7 @@ import axios from 'axios'
 export const EliminarLibro = () => {
 
     const [agregado, setAgregado] = useState();
+
     const [dataForm, setDataForm] = useState({id:""});
 
     const idHandler = (event)=>{
@@ -14,7 +15,7 @@ export const EliminarLibro = () => {
 
       const submitHandler = async () => {
         event.preventDefault();
-        const url = `http://localhost:4000/api/libro/${dataForm.id}`;
+        const url = `http://localhost:5000/api/libro/${dataForm.id}`;
 
         try {
         const result = await axios.delete(url);

@@ -1,0 +1,34 @@
+.form-group.row {
+    border: 1px solid gray;
+}
+label.col-sm-4.col-form-label {
+    border-right: 1px solid gray;
+}
+
+.col-7.mx-auto {
+    border: 1px solid gray;
+    padding: 27px;
+    border-radius: 10px;
+    background: #2f2d2d;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .9rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    text-align: center;
+    white-space: normal;
+}
+
+button{
+    border-radius: 0px !important;
+}
+
+h3 {
+    font-size: 18px;
+}
